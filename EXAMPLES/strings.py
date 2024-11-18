@@ -13,3 +13,4 @@ print("found WOLVERINES at:", a.find('WOLVERINES')) # Returns -1 if substring no
 
 b = "graham"
 print("Capitalized:", b.capitalize()) # Capitalizes first character of string, only if it is a letter
+

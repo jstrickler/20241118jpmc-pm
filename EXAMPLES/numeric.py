@@ -1,7 +1,7 @@
 
 a = 5
 b = 10
-c = 20.22
+c = 20.22  # .2323   4323.   8.99   4.0
 d = 0o123        # Octal
 e = 0xdeadbeef   # Hex
 f = 0b10011101   # Binary 
