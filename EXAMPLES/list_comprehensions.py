@@ -27,7 +27,8 @@ print("\n")
 suits = 'Clubs', 'Diamonds', 'Hearts', 'Spades'
 ranks = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
 
-deck = [(rank, suit) for suit in suits for rank in ranks]   # More than one for is OK
+deck = [(rank, suit, color) for suit in suits for rank in ranks for color in ('red', 'blue')]   # More than one for is OK
 
-for rank, suit in deck:
-    print(f"{rank}-{suit}")
+
+for rank, suit, color in deck:
+    print(f"{rank}-{suit}/{color}")

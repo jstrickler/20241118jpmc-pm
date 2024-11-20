@@ -23,3 +23,6 @@ print(f"{max(fruits) = }")
 
 values = [5, 8, 27, -3, 14, 98, 5.6]
 print(f"{sum(values) = }")
+
+for fruit in fruits:
+    print(fruit)

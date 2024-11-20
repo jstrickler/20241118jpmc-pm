@@ -1,7 +1,6 @@
+FILE_NAME = '../DATA/mary.txt'  # IRL put file path on cmd line or in config file
 
-FILE_NAME = '../DATA/mary.txt'
-
-mary_in = open(FILE_NAME)  # open file for reading
+mary_in = open(FILE_NAME, 'r')  # open file for reading
 # read file...
 mary_in.close()  # close file (easy to forget to do this!)
 
@@ -9,6 +8,8 @@ with open(FILE_NAME) as mary_in:  # open file for reading
     for raw_line in mary_in:  # iterate over lines in file (line retains \n)
         line = raw_line.rstrip()  # rstrip('') removes whitespace (including \n or \r ) from end of string
         print(line)
+    # mary_in.close()
+
 print('-' * 60)
 
 with open(FILE_NAME) as mary_in:

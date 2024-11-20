@@ -1,4 +1,3 @@
-
 from pprint import pprint
 
 knight_info = {}  # create empty dict
@@ -8,7 +7,7 @@ with open("../DATA/knights.txt") as knights_in:
         name, title, color, quest, comment = line.rstrip('\n\r').split(":")
         knight_info[name] = title, color, quest, comment  # create new dict element with name as key and a tuple of the other fields as the value
 
-pprint(knight_info)
+pprint(knight_info, sort_dicts=False)
 print()
 
 for name, info in knight_info.items():
@@ -16,3 +15,8 @@ for name, info in knight_info.items():
 
 print()
 print(knight_info['Robin'][2])
+
+print('-' * 60)
+print(knight_info)
+print('=' * 20)
+print(repr(knight_info))
