@@ -4,6 +4,7 @@ count = 5
 avg = 3.4563892382
 
 
+print(f"It is {temp}\u00B0 in {city}") # best practice
 print("It is {}\u00B0 in {}".format(temp, city))  # variables inserted into string
 
 # .2f means round a float to 2 decimal points
