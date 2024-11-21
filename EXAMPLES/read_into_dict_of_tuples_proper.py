@@ -12,6 +12,9 @@ def main():  # named 'main' by *convention*
     info = read_knight_data(FILE_PATH)
     pretty_print_knight_data(info)
     print()
+    # spam 
+    # ham 
+    # toast
     print_titles(info)
     print()
     robin_color = get_field_value(info, 'Robin', 1)
@@ -60,3 +63,5 @@ def get_field_value(knight_info, knight, field_index):
 
 #if __name__ == "__main__":  # if running this script directly
 main()
+
+print(f"{main.__doc__ = }")
